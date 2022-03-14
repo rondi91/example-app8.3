@@ -1,0 +1,37 @@
+php artisan make:model Brand -a
+php artisan make:model Produk -a
+php artisan migrate:fresh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public function definition()
+{
+$title = $this->faker->sentence;
+$slug = Str::slug($title);
+$user = User::count() >= 20 ? User::inRandomOrder()->first()->id: User::factory();
+$category = Category::count() >= 7 ? Category::inRandomOrder()->first()->id: Category::factory();
+
+return [
+'title' => $title,
+'slug' => $slug,
+'image' => $this->faker->imageUrl(900, 300),
+'content' => $this->faker->text(300),
+'user_id' => $user,
+'category_id' => $category,
+];
+}
