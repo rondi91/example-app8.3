@@ -1,5 +1,7 @@
 php artisan make:model Brand -a
 php artisan make:model Produk -a
+php artisan make:model Tag -a
+php artisan make:migration CreateProductTagsTable
 php artisan migrate:fresh
 
 
