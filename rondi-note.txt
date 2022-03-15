@@ -2,6 +2,8 @@ php artisan make:model Brand -a
 php artisan make:model Produk -a
 php artisan make:model Tag -a
 php artisan make:migration CreateProductTagsTable
+php artisan make:migration CreateAttributesTable
+php artisan make:migration CreateAttributeValuesTable
 php artisan migrate:fresh
 
 
@@ -37,3 +39,11 @@ return [
 'category_id' => $category,
 ];
 }
+
+
+
+git
+==================================
+git remote add origin https://github.com/rondi91/example-app8.3.git
+git branch -M main
+git push -u origin main
