@@ -16,6 +16,12 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
 
-        $this->call(BrandSeeder::class);
+        $this->call(brandSeeder::class);
+        $this->call(tagSeeder::class);
+        $this->call(categorySeeder::class);
+        $this->call(colorSeeder::class);
+        //$this->call(giftCardSeeder::class);
+        //  $this->call(photoSeeder::class);
+        $this->call(ProductSeeder::class);
     }
 }

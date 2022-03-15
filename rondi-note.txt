@@ -1,9 +1,18 @@
+copy code dari e-plus
+
+
+
 php artisan make:model Brand -a
 php artisan make:model Produk -a
 php artisan make:model Tag -a
 php artisan make:migration CreateProductTagsTable
 php artisan make:migration CreateAttributesTable
 php artisan make:migration CreateAttributeValuesTable
+php artisan make:model Category -a
+php artisan make:migration CreateCategoryProductsTable
+php artisan make:migration CreatePhotosTable
+php artisan make:model Color -a
+php artisan make:migration CreateColorProductsTable
 php artisan migrate:fresh
 
 
